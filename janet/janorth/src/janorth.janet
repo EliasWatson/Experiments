@@ -146,6 +146,6 @@
 
 (defn main [&]
   (def context (new-context))
-  (eval-src context (preload "core.f"))
+  (eval-src context (preload "src/core.f"))
   (while true
     (eval-src context (file/read stdin :line))))
